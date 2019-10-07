@@ -41,9 +41,13 @@ print("All new dates have saved in the new txt file")
 
 new_path = "file_with_new_date.txt"
 with open(new_path, 'w') as f:
-    f.write(str(first_new_date))
-    f.write("\n")
-    f.write(str(second_new_date))
-    f.write("\n")
-    f.write(str(third_new_date))
+    for i in first_new_date:
+        f.write(str(i))
+        f.write("\n")
+    for i in second_new_date:
+        f.write(str(i))
+        f.write("\n")
+    for i in third_new_date:
+        f.write(str(i))
+        f.write("\n")
 
